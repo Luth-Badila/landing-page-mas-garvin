@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Todo List</title>
+  </head>
+  <body>
+    <input id="task" placeholder="Tambah tugas" />
+    <button id="add">Tambah</button>
+    <!-- <button id="add" onclick="addTodoList()">Tambah</button> -->
+    <ul id="list"></ul>
+
+    <script>
+      //  function addTodoList() {
+      //      const task = document.getElementById("task").value;
+      //    if (task) {
+      //      const li = document.createElement("li");
+      //      li.textContent = task;
+      //      document.getElementById("list").appendChild(li);
+      //      document.getElementById("task").value = "";
+      //    }
+      //  }
+      document.getElementById("add").onclick = () => {
+        const task = document.getElementById("task").value;
+        if (task) {
+          const li = document.createElement("li");
+          li.textContent = task;
+          document.getElementById("list").appendChild(li);
+          document.getElementById("task").value = "";
+        }
+      };
+    </script>
+  </body>
+</html>

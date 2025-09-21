@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <button id="open">Buka Modal</button>
+    <div id="modal" style="display: none; background: #0008; position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; align-items: center">
+      <div style="background: #fff; padding: 20px; border-radius: 8px">
+        <p>Ini modal!</p>
+        <button id="close">Tutup</button>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById("modal");
+      document.getElementById("open").onclick = () => (modal.style.display = "flex");
+      document.getElementById("close").onclick = () => (modal.style.display = "none");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <button id="countBtn">Klik saya</button>
+    <p>Jumlah klik: <span id="count">0</span></p>
+
+    <script>
+      let counter = 0;
+      document.getElementById("countBtn").onclick = () => {
+        counter++;
+        document.getElementById("count").textContent = counter;
+      };
+    </script>
+  </body>
+</html>

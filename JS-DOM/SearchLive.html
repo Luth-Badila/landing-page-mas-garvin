@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+  </head>
+  <body>
+    <input type="text" id="search" placeholder="Cari..." />
+    <ul id="names">
+      <li>Ani</li>
+      <li>Budi</li>
+      <li>Citra</li>
+      <li>Doni</li>
+    </ul>
+
+    <script>
+      document.getElementById("search").addEventListener("keyup", (e) => {
+        const term = e.target.value.toLowerCase();
+        document.querySelectorAll("#names li").forEach((li) => {
+          li.style.display = li.textContent.toLowerCase().includes(term) ? "" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>

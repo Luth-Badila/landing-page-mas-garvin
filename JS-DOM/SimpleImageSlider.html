@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+  </head>
+  <body>
+    <img id="slide" src="https://picsum.photos/300/200?1" width="300" />
+    <button id="next">Next</button>
+
+    <script>
+      let i = 1;
+      document.getElementById("next").onclick = () => {
+        i++;
+        document.getElementById("slide").src = `https://picsum.photos/300/200?${i}`;
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validasi Form</title>
+  </head>
+  <body>
+    <input type="text" id="name" placeholder="Masukkan nama" />
+    <button id="submit">Submit</button>
+    <p id="msg"></p>
+  </body>
+  <script>
+    document.getElementById("submit").addEventListener("click", () => {
+      const name = document.getElementById("name").value;
+      document.getElementById("msg").textContent = name ? "Halo, " + name : "Nama tidak boleh kosong!";
+    });
+  </script>
+</html>
