@@ -1,5 +1,4 @@
 <?php
-// dashboard.php
 require_once 'config.php';
 
 // Hapus (delete) via GET param ?delete=id

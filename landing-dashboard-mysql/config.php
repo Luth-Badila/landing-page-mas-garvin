@@ -1,5 +1,4 @@
 <?php
-// config.php
 $DB_HOST = 'localhost';
 $DB_NAME = 'spareparts';
 $DB_USER = 'root';

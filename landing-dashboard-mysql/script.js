@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   faders.forEach((el) => obs.observe(el));
 });
 
-// Form AJAX submit + message handling with smooth fade out
+// Submit and message handling
 const orderForm = document.getElementById("orderForm");
 if (orderForm) {
   orderForm.addEventListener("submit", function (e) {
@@ -41,12 +41,12 @@ if (orderForm) {
 
         // setelah delay (3 detik) mulai fade-out (smooth)
         setTimeout(() => {
-          msg.classList.remove("show"); // CSS : opacity -> 0 transform up
-          // setelah transition (.8s) hapus isi & kelas warna agar bisa dipakai lagi
+          msg.classList.remove("show");
+          
           setTimeout(() => {
             msg.textContent = "";
             msg.className = "message";
-          }, 900); // harus sedikit lebih besar dari CSS transition (0.8s)
+          }, 900);
         }, 3000);
       })
       .catch((err) => {

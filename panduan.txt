@@ -1,0 +1,4 @@
+Superglobal variabel
+PHP Modul
+MYSQL Install
+Basic command mysql
