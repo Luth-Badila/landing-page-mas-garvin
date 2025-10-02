@@ -1,10 +1,14 @@
+<?php
+   // index.php
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Sparepart Mobil</title>
-  <link rel="stylesheet" href="style.css">
+  <title>SparepartMobil - Sparepart Berkualitas</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -18,8 +22,7 @@
   </ul>
 </nav>
 
-
-<section class="hero fade-in">
+<section class="hero">
   <div class="hero-inner">
     <h1>Komponen & Sparepart Mobil Berkualitas</h1>
     <p>Garansi original, pengiriman cepat, harga kompetitif.</p>
@@ -27,7 +30,7 @@
   </div>
 </section>
 
-<section id="produk" class="produk fade-in">
+<section id="produk" class="produk">
   <h2>Produk Unggulan</h2>
   <div class="grid">
     <article class="card">
@@ -48,7 +51,7 @@
   </div>
 </section>
 
-<section id="pesan" class="form-section fade-in">
+<section id="pesan" class="form-section">
   <h2>Form Pemesanan</h2>
 
   <form id="orderForm">

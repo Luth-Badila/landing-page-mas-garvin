@@ -34,6 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_id'])) {
 $sql = "SELECT * FROM orders ORDER BY created_at DESC";
 $orders = $pdo->query($sql)->fetchAll();
 
+var_dump($orders);
+
 // Cek apakah sedang edit
 $editId = isset($_GET['edit']) ? (int)$_GET['edit'] : null;
 ?>
