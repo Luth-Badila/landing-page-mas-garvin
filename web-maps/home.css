@@ -1,0 +1,138 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f4f7fa;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(135deg, #0078ff, #00c4ff);
+  color: white;
+}
+
+/* Map */
+.map-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+/* Services Cards */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.6s ease-out;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effect on card */
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Gallery Section */
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  transform: scale(0.95);
+  opacity: 0;
+  transition: all 0.6s ease-out;
+}
+
+/* Fade-in animation */
+.gallery-item.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hover animation */
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0078ff;
+  color: white;
+}
+
+/* Fade initial */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}

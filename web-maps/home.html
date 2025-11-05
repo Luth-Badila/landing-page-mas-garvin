@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page dengan Animasi & Gallery</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Selamat Datang di Kantor Kami</h1>
+    <p>Kunjungi lokasi kami dan lihat layanan terbaik kami di bawah ini</p>
+  </header>
+
+  <!-- 🌍 Map Section -->
+  <section class="map-section">
+    <h2>Lokasi Kami</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.260739176325!2d112.74816047499683!3d-7.215193071072207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9d845b41f7f%3A0xb657528ad5f9b69e!2sTunjungan%20Plaza%2C%20Surabaya!5e0!3m2!1sid!2sid!4v1730805200000!5m2!1sid!2sid"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <a
+        href="https://www.google.com/maps/place/Tunjungan+Plaza,+Surabaya"
+        target="_blank"
+        class="map-overlay"
+        title="Klik untuk buka di Google Maps">
+      </a>
+    </div>
+  </section>
+
+  <!-- 💼 Services Section -->
+  <section class="services">
+    <h2>Layanan Kami</h2>
+    <div class="card-container">
+      <div class="card fade">
+        <img src="https://source.unsplash.com/400x250/?office" alt="Kantor" />
+        <h3>Konsultasi Bisnis</h3>
+        <p>Kami membantu Anda menyusun strategi bisnis yang efektif dan berkelanjutan.</p>
+      </div>
+      <div class="card fade">
+        <img src="https://source.unsplash.com/400x250/?meeting" alt="Meeting" />
+        <h3>Manajemen Proyek</h3>
+        <p>Kami menyediakan tim profesional untuk memastikan proyek Anda selesai tepat waktu.</p>
+      </div>
+      <div class="card fade">
+        <img src="https://source.unsplash.com/400x250/?teamwork" alt="Tim" />
+        <h3>Pengembangan Tim</h3>
+        <p>Kami membantu meningkatkan kolaborasi dan performa tim Anda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🖼️ Gallery Section -->
+  <section class="gallery">
+    <h2>Galeri Kegiatan</h2>
+    <div class="gallery-container">
+      <img class="gallery-item fade" src="./images/img1.jpg" alt="Workshop">
+      <img class="gallery-item fade" src="./images/img2.jpg" alt="Office Interior">
+      <img class="gallery-item fade" src="./images/img3.jpg" alt="Meeting">
+      <img class="gallery-item fade" src="./images/img4.jpg" alt="Team">
+      <img class="gallery-item fade" src="./images/img5.jpg" alt="Presentation">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kantor Kami. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
