@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+/* navbar */
+img.Logo {
+  max-width: 230px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 7px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+}
+
+.link {
+    display: flex;
+    gap: 15px;
+}
+
+/* banner */
+.img-banner {
+  width: 900px;
+  height: 400px;
+}
+
+.banner-text {
+  color: rgb(255, 163, 51);
+  padding-left: 850px;
+  font-size: 30px;
+}
+
+.contact-btn {
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  background-color: rgb(255, 163, 51);
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.contact-btn:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.1);
+}
