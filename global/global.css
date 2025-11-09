@@ -84,7 +84,7 @@ gap:20px;
     top: 0;
     flex-direction: column;
     background-color: black;
-    height: 100vh;
+    height: 100%;
     width: 60%;
     justify-content: center;
     align-items: center;
