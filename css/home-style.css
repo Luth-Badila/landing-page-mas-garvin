@@ -52,7 +52,7 @@ main {
 }
 
 
-/* banner */
+/* Banner */
 .mySlides {
   display: none;
 }
@@ -83,7 +83,6 @@ main {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -98,7 +97,6 @@ main {
   }
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px;
