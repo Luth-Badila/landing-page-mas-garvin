@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gaban Auto Garage</title>
     <link rel="stylesheet" href="./css/home-style.css" />
+    <link rel="stylesheet" href="./global/global.css" />
     <!-- Ikon -->
     <link
       rel="icon"
@@ -23,16 +24,18 @@
         />
       </div>
 
-      <ul class="link" id="link">
-        <li><a class="text-link" href="./index.html">Home</a></li>
-        <li>
-          <a class="text-link" href="./pages/bumper-guard-index.html"
-            >About Us</a
-          >
-        </li>
-        <li><a class="text-link" href="#Project">Project</a></li>
-        <li><a class="text-link" href="#search">Search</a></li>
-        <li><a class="text-link" href="#Contact">Contact</a></li>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
 
@@ -61,90 +64,202 @@
     </div>
 
     <!-- Card -->
-    <section class="features" id="Project">
+    <section class="features">
       <h2>Our Project</h2>
-      <div class="cardContainer">
-        <div class="card">
-          <div class="card" id="bumper">
-            <a href="./bumper-guard-index.html" target="_blank">
+      <div class="grid">
+        <!-- Card 1 -->
+        <article
+          class="card"
+          tabindex="0"
+          aria-labelledby="tittle1"
+          aria-describedby="desc1"
+        >
+          <a href="./pages/bumper-guard-index.html" class="card-link">
+            <div class="media">
               <img
-                src="./Images/Bumper-Guard/Pemasangan-Bumper-Guard/Pemasangan-Bumper-Guard-02.jpg"
+                src="./Images/Bumper-Guard/Bumper-Guard-01.jpg"
                 alt="Bumper Guard"
-                class="bumper-guard"
               />
-            </a>
-            <h3>Bumper Guard</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card" id="bumper">
-            <a href="./bumper-guard-index.html" target="_blank">
+            </div>
+            <div class="content">
+              <h3 id="tittle1" class="title">Bumper Guard</h3>
+              <p id="desc1" class="desc">Ada Berbagai jenis Bumper Guard</p>
+            </div>
+          </a>
+        </article>
+        <article
+          class="card"
+          tabindex="0"
+          aria-labelledby="tittle1"
+          aria-describedby="desc1"
+        >
+          <a href="./pages/bumper-guard-index.html" class="card-link">
+            <div class="media">
               <img
-                src="./Images/Bumper-Guard/Pemasangan-Bumper-Guard/Pemasangan-Bumper-Guard-02.jpg"
+                src="./Images/Bumper-Guard/Bumper-Guard-01.jpg"
                 alt="Bumper Guard"
-                class="bumper-guard"
               />
-            </a>
-            <h3>Bumper Guard</h3>
-             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card" id="bumper">
-            <a href="./bumper-guard-index.html" target="_blank">
+            </div>
+            <div class="content">
+              <h3 id="tittle1" class="title">Bumper Guard</h3>
+              <p id="desc1" class="desc">Ada Berbagai jenis Bumper Guard</p>
+            </div>
+          </a>
+        </article>
+        <article
+          class="card"
+          tabindex="0"
+          aria-labelledby="tittle1"
+          aria-describedby="desc1"
+        >
+          <a href="./pages/bumper-guard-index.html" class="card-link">
+            <div class="media">
               <img
-                src="./Images/Bumper-Guard/Pemasangan-Bumper-Guard/Pemasangan-Bumper-Guard-02.jpg"
+                src="./Images/Bumper-Guard/Bumper-Guard-01.jpg"
                 alt="Bumper Guard"
-                class="bumper-guard"
               />
-            </a>
-            <h3>Bumper Guard</h3>
-             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-    </section>
-
-    <!-- form-section-search -->
-
-     <section class="search" id="search">
-      <h2>Explore More</h2>
-      <form class="order-form">
-          <label for="Search">Search Here</label>
-          <input type="text" name="Search" required/>
-        <button type="submit">Enter</button>
-      </form>
+            </div>
+            <div class="content">
+              <h3 id="tittle1" class="title">Bumper Guard</h3>
+              <p id="desc1" class="desc">Ada Berbagai jenis Bumper Guard</p>
+            </div>
+          </a>
+        </article>
+        <article
+          class="card"
+          tabindex="0"
+          aria-labelledby="tittle1"
+          aria-describedby="desc1"
+        >
+          <a href="./pages/bumper-guard-index.html" class="card-link">
+            <div class="media">
+              <img
+                src="./Images/Bumper-Guard/Bumper-Guard-01.jpg"
+                alt="Bumper Guard"
+              />
+            </div>
+            <div class="content">
+              <h3 id="tittle1" class="title">Bumper Guard</h3>
+              <p id="desc1" class="desc">Ada Berbagai jenis Bumper Guard</p>
+            </div>
+          </a>
+        </article>
+        <article
+          class="card"
+          tabindex="0"
+          aria-labelledby="tittle1"
+          aria-describedby="desc1"
+        >
+          <a href="./pages/bumper-guard-index.html" class="card-link">
+            <div class="media">
+              <img
+                src="./Images/Bumper-Guard/Bumper-Guard-01.jpg"
+                alt="Bumper Guard"
+              />
+            </div>
+            <div class="content">
+              <h3 id="tittle1" class="title">Bumper Guard</h3>
+              <p id="desc1" class="desc">Ada Berbagai jenis Bumper Guard</p>
+            </div>
+          </a>
+        </article>
+        <article
+          class="card"
+          tabindex="0"
+          aria-labelledby="tittle1"
+          aria-describedby="desc1"
+        >
+          <a href="./pages/bumper-guard-index.html" class="card-link">
+            <div class="media">
+              <img
+                src="./Images/Bumper-Guard/Bumper-Guard-01.jpg"
+                alt="Bumper Guard"
+              />
+            </div>
+            <div class="content">
+              <h3 id="tittle1" class="title">Bumper Guard</h3>
+              <p id="desc1" class="desc">Ada Berbagai jenis Bumper Guard</p>
+            </div>
+          </a>
+        </article>
+      </div>
     </section>
 
     <!-- footer -->
-    <!-- <footer class="Contact" id="Contact">
-      <div id="map">
-        <h1>Our Location</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.042418024032!2d112.74231207476124!3d-7.349133792659639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5004bffe541%3A0x750ca5e20ffb54cb!2sGaban%20Auto%20Garage!5e0!3m2!1sen!2sid!4v1762401466496!5m2!1sen!2sid" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+    <footer>
+      <div class="footer-container">
+        <div class="map-section">
+          <h1>Our Location</h1>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.2512567155613!2d112.74231207476124!3d-7.349133792659639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5004bffe541%3A0x750ca5e20ffb54cb!2sGaban%20Auto%20Garage!5e1!3m2!1sen!2sid!4v1762922425863!5m2!1sen!2sid"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              href="https://maps.app.goo.gl/PKVoK8QumqTFdE8P8"
+              class="map-overlay"
+              title="klik untuk buka di Google Maps"
+            ></a>
+          </div>
+        </div>
+        <div class="contact-caption">
+          <div class="sosmed-container">
+            <div class="judul-socmed">
+              <h1>Social Media</h1>
+            </div>
+            <div class="medsos">
+              <a href="" class="link-medsos">
+                <img src="./Images/medsos/instagram.png" alt="medsos" />
+              </a>
+              <a href="" class="link-medsos">
+                <img src="./Images/medsos/tik-tok.png" alt="medsos" />
+              </a>
+            </div>
+          </div>
+          <div class="sosmed-container">
+            <div class="judul-socmed">
+              <h1>Contact</h1>
+            </div>
+            <div class="contact">
+              <a
+                href="https://wa.me/6281615508888?text=halo%20kami%20gaban%20auto%20garage%20mau%20pesan%20apa"
+                target="_blank"
+                rel="noopener"
+                class="flex link-medsos"
+              >
+                <img src="./Images/medsos/whatsapp.png" alt="medsos" />
+                <p>089685674432</p>
+              </a>
+              <!-- Membuka Gmail compose (harus sudah login ke Gmail) -->
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=arenabrekot.0q@gmail.com&su=Halo&body=Halo"
+                target="_blank"
+                rel="noopener"
+                class="flex link-medsos"
+              >
+                <img src="./Images/medsos/gmail.png" alt="" />
+                <p>arenabrekot.0q@gmail.com</p>
+              </a>
+            </div>
+          </div>
 
-      <div id="judul-2">
-        <h1>Social Media</h1>
-      </div>
-      <div id="socmed">
-        <h3>IG: @gabanautogarage</h3>
-        <h3>TikTok: @gabanautogarage_sby</h3>
-      </div>
+          <!-- <div class="sosmed-container">
+            <div class="judul-socmed">
+              <h1>Contact</h1>
+            </div>
 
-      <div id="judul">
-        <h1>Contact & Location</h1>
+          </div> -->
+        </div>
       </div>
-      <div id="info">
-        <h3>WA: 08123456</h3>
-        <h3>📧:gabanautogarage@gmail.com</h3>
-      </div>
-
-      <div class="copyright">
-        <p>&copy; 2025 gabanautogarage copyright.</p>
-      </div>
-    </footer> -->
+    </footer>
 
     <!-- Untuk js bootstrap -->
     <script src="./js/home.js"></script>
+    <script src="./global/global.js"></script>
   </body>
 </html>

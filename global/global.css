@@ -1,0 +1,254 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+/* navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* logo */
+.logo img {
+  width: 150px;
+}
+
+/* links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Hover underline animation */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: black;
+    height: 100%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right 0.4s ease-in-out;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 99;
+    background: transparent;
+  }
+
+  /* Animate the hamburger into an X */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-11px);
+  }
+
+  /* slide-in animation for links */
+  .nav-links li {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slideIn 0.4s forwards;
+  }
+
+  .nav-links.active li:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .nav-links.active li:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .nav-links.active li:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .nav-links.active li:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .nav-links.active li:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  .map-container {
+    width: 500px;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  padding: 35px 0;
+}
+
+.sosmed-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.judul-socmed h1 {
+  color: rgba(241, 147, 85, 1);
+  text-align: right;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start !important;
+  background-color: rgba(77, 200, 244, 1);
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+
+
+.medsos {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(77, 200, 244, 1);
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.medsos img,
+.link-medsos img {
+  width: 35px;
+}
+
+.link-medsos {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.link-medsos:hover {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+/* Map Footer */
+/* .map-section {
+  padding: 40px 20px;
+} */
+
+.map-section h1 {
+  text-align: center;
+  padding: 10px 0;
+  color: rgba(241, 147, 85, 1);
+  font-size: 50px;
+}
+
+.map-container {
+  position: relative;
+  width: 1200px;
+  max-width: 1200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px black;
+  z-index: 99;
+}
+
+/* Link overlay agar map bisa diklik */
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
