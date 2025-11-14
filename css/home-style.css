@@ -47,9 +47,9 @@ li {
 } */
 
 /* Main container */
-main {
+/* main {
   z-index: 1;
-}
+} */
 
 
 /* Banner */
@@ -174,7 +174,6 @@ main {
   color: #11151f;
 }
 
-
 .desc {
   font-size: 0.95rem;
   color: #475569;
@@ -273,9 +272,9 @@ button {
 }
 
 .map-section {
-  text-align: center;
+  /* text-align: center; */
   padding: 40px 20px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .map-container {
@@ -285,6 +284,7 @@ button {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  z-index: 99;
 }
 
 /* Link overlay agar map bisa diklik */
