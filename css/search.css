@@ -91,3 +91,35 @@ h1 {
   border: 1px solid #ffb3b3;
   font-weight: bold;
 }
+
+
+    /* RESPONSIVE BREAKPOINTS */
+    /* Mobile (1 column) */
+    @media (max-width: 480px) {
+      #cardContainer {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      .search-box input {
+        font-size: 15px;
+      }
+    }
+
+    /* Tablet (2 columns) */
+    @media (min-width: 481px) and (max-width: 991px) {
+      #cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Laptop / Desktop (3 columns) */
+    @media (min-width: 992px) {
+      #cardContainer {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
