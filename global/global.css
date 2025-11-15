@@ -277,16 +277,25 @@ place-items: center;
   text-align: center;
 }
 .medsos, .contact {
-  /* grid-template-columns: repeat(1,1fr); */
   width: 350px;
 }
 
 .medsos {
-  grid-template-columns: repeat(4,1fr);
+  grid-auto-flow: column; 
+  grid-auto-columns: 1fr;
+  place-content: center;
+  place-items: center;
 }
 
 .medsos img,
 .link-medsos img {
   width: 25px;
 }
+
+.contact a {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 }
