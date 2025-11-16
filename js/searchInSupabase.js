@@ -36,6 +36,7 @@ function renderCards(items) {
   });
 }
 
+
 // Mengambil data dari supabase
 async function loadData() {
   loading.style.display = "block";
@@ -57,6 +58,7 @@ async function loadData() {
 }
 
 loadData();
+
 
 // Mencari data yang diambil dari supabase
 searchInput.addEventListener("input", function () {

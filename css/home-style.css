@@ -4,47 +4,6 @@
   margin: 0;
 }
 
-/* navbar */
-/* .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background-color: black;
-  color: white;
-}
-
-.logo img {
-  width: 230px;
-}
-.link {
-  display: flex;
-  gap: 15px;
-}
-
-li {
-  list-style: none;
-} */
-
-/* .text-link {
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-  transition: transform 0.2s;
-  width: 100px;
-  height: 100px;
-  padding: 3px;
-}
-
-.text-link:hover {
-  color: rgb(0, 0, 0);
-  background-color: white;
-  border-radius: 10px;
-  padding: 3px;
-} */
-
-/* -------------------------------- */
-
 /* banner */
 .mySlides {
   display: none;
