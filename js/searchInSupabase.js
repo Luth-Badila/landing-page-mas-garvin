@@ -1,4 +1,4 @@
-// ONFIGURASI SUPABASE
+// Configurasi supabase
 const SUPABASE_URL = "https://wqincsqcxfzlctixlrtw.supabase.co";
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndxaW5jc3FjeGZ6bGN0aXhscnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMxMTg3MzMsImV4cCI6MjA3ODY5NDczM30.e5fw2NIn5FhsYPqLNQlritowjtaSKOtJW360r2ApE0k";
 
@@ -12,7 +12,7 @@ const errorBox = document.getElementById("errorBox");
 
 let datas = [];
 
-// FUNGSI RENDER KARTU
+// render card
 function renderCards(items) {
   cardContainer.innerHTML = "";
 
@@ -36,7 +36,7 @@ function renderCards(items) {
   });
 }
 
-// MBIL DATA DARI SUPABASE
+// Mengambil data dari supabase
 async function loadData() {
   loading.style.display = "block";
   errorBox.style.display = "none";
@@ -58,7 +58,7 @@ async function loadData() {
 
 loadData();
 
-// FITUR SEARCH REALTIME
+// Mencari data yang diambil dari supabase
 searchInput.addEventListener("input", function () {
   const keyword = this.value.toLowerCase();
 
