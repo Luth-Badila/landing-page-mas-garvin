@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../global/global.css" />
+    <link rel="stylesheet" href="../css/products-style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="../Images/Copy of Cover Plat Nomor.png"
+          alt="Logo Gaban"
+          class="Logo"
+        />
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Product List</h1>
+
+      <!-- Search Input -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Lampu, Bumper Guard, Roof Box, Dll"
+      />
+
+      <!-- Loading Animation -->
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Loading Data.....</p>
+      </div>
+
+      <!-- Error Message -->
+      <div id="errorBox" class="error-box"></div>
+
+      <!-- Card Container -->
+      <div class="card-container" id="cardContainer"></div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/product-search.js"></script>
+    <script src="../global/global.js"></script>
+  </body>
+</html>

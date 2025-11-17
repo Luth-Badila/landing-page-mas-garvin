@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -67,7 +73,7 @@
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .hamburger span {
@@ -181,12 +187,13 @@ footer {
 
 .judul-socmed h1 {
   color: rgba(241, 147, 85, 1);
-  text-align: right;
+  text-align: center;
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(1, 1fr);
   justify-content: start !important;
   background-color: rgba(77, 200, 244, 1);
   padding: 5px 20px;
@@ -196,8 +203,9 @@ footer {
 
 
 .medsos {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
   background-color: rgba(77, 200, 244, 1);
@@ -220,6 +228,13 @@ footer {
   background-color: #f5f5f5;
   padding: 10px;
   border-radius: 30px;
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
 }
 
 /* Map Footer */
@@ -251,4 +266,51 @@ footer {
   z-index: 2;
   background: rgba(0, 0, 0, 0);
   cursor: pointer;
+}
+
+
+@media (max-width:720px) {
+  .grid {
+    place-content: center;
+    place-items: center;
+  }
+  footer {
+    padding: 35px 20px;
+  }
+  .map-container {
+    width: 350px;
+  }
+  .sosmed-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .judul-socmed h1 {
+    text-align: center;
+  }
+  .medsos, .contact {
+    width: 350px;
+  }
+
+  .medsos {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    place-content: center;
+    place-items: center;
+  }
+
+  .medsos img, .link-medsos img {
+    width: 25px;
+  }
+
+  .contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
