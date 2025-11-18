@@ -4,47 +4,6 @@
   margin: 0;
 }
 
-/* navbar */
-/* .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background-color: black;
-  color: white;
-}
-
-.logo img {
-  width: 230px;
-}
-.link {
-  display: flex;
-  gap: 15px;
-}
-
-li {
-  list-style: none;
-} */
-
-/* .text-link {
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-  transition: transform 0.2s;
-  width: 100px;
-  height: 100px;
-  padding: 3px;
-}
-
-.text-link:hover {
-  color: rgb(0, 0, 0);
-  background-color: white;
-  border-radius: 10px;
-  padding: 3px;
-} */
-
-/* -------------------------------- */
-
 /* banner */
 .mySlides {
   display: none;
@@ -231,9 +190,8 @@ li {
   }
 
   .card {
-    max-width: 80%;
-    /* padding: 0 10px; */
-    margin: 20px 0;
+      max-width: 90%;
+    padding: 0 10px;
   }
 
   .features {
@@ -281,77 +239,3 @@ button {
   border-radius: 5px;
   padding: 3px;
 }
-
-/* Footer */
-
-
-/* footer
-.Contact #map {
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#map h1 {
-  color: rgb(255, 163, 51);
-  padding: 25px;
-}
-
-#judul-2 h1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  background-color: #000;
-  color: rgb(255, 163, 51);
-  padding: 20px 0 0 0;
-}
-
-#socmed {
-  background: #000000;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 25px;
-  gap: 10px;
-
-}
-
-#socmed h3 {
-  color: rgb(255, 163, 51);
-  font-size: 25px;
-}
-
-#judul h1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  background-color: #000;
-  color: rgb(255, 163, 51);
-  padding: 20px 0 0 0;
-}
-
-#info {
-  background: #000000;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 25px;
-  gap: 10px;
-
-}
-
-#info h3 {
-  color: rgb(255, 163, 51);
-  font-size: 25px;
-}
-
-
-.copyright {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 20px;
-}
- */

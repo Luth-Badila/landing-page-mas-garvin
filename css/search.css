@@ -1,0 +1,118 @@
+.container {
+  max-width: 950px;
+  margin: 100px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+  font-size: 16px;
+  transition: .2s;
+}
+
+#searchInput:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+/* CARD STYLE */
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform .25s ease, box-shadow .25s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* LOADING STYLE */
+.loading {
+  display: none;
+  text-align: center;
+  padding: 40px;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #ddd;
+  border-top-color: #007bff;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ERROR BOX */
+.error-box {
+  display: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: #ffe5e5;
+  color: #b30000;
+  border: 1px solid #ffb3b3;
+  font-weight: bold;
+}
+
+
+    /* RESPONSIVE BREAKPOINTS */
+    /* Mobile (1 column) */
+    @media (max-width: 480px) {
+      #cardContainer {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      .search-box input {
+        font-size: 15px;
+      }
+    }
+
+    /* Tablet (2 columns) */
+    @media (min-width: 481px) and (max-width: 991px) {
+      #cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Laptop / Desktop (3 columns) */
+    @media (min-width: 992px) {
+      #cardContainer {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+

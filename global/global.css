@@ -181,7 +181,6 @@ footer {
 .contact-caption {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 20px 0;
 }
 
@@ -195,22 +194,25 @@ footer {
   gap: 16px;
   grid-template-columns: repeat(1, 1fr);
   justify-content: start !important;
-  background-color: rgba(77, 200, 244, 1);
-  padding: 5px 20px;
-  border-radius: 20px;
-}
-
-
-
-.medsos {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
   background-color: rgba(77, 200, 244, 1);
   padding: 5px 20px;
   border-radius: 20px;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.medsos {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(77, 200, 244, 1);
+  padding: 5px 20px;
+  border-radius: 20px;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .medsos img,
@@ -252,7 +254,7 @@ footer {
 .map-container {
   position: relative;
   width: 1200px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px black;
@@ -268,49 +270,48 @@ footer {
   cursor: pointer;
 }
 
-
 @media (max-width:720px) {
   .grid {
-    place-content: center;
-    place-items: center;
-  }
+place-content: center;
+place-items: center;
+}
   footer {
-    padding: 35px 20px;
-  }
-  .map-container {
-    width: 350px;
-  }
-  .sosmed-container {
-    justify-content: center;
-    align-items: center;
-  }
+  padding: 35px 20px;
+}
+.map-container {
+  width: 350px;
+}
+.sosmed-container {
+  justify-content: center;
+  align-items: center;
+}
   .contact-caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .judul-socmed h1 {
-    text-align: center;
-  }
-  .medsos, .contact {
-    width: 350px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.judul-socmed h1 {
+  text-align: center;
+}
+.medsos, .contact {
+  width: 350px;
+}
 
-  .medsos {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    place-content: center;
-    place-items: center;
-  }
+.medsos {
+  grid-auto-flow: column; 
+  grid-auto-columns: 1fr;
+  place-content: center;
+  place-items: center;
+}
 
-  .medsos img, .link-medsos img {
-    width: 25px;
-  }
+.medsos img,
+.link-medsos img {
+  width: 25px;
+}
 
-  .contact a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+.contact a {
+display: flex;
+justify-content: center;
+align-items: center;
+}
 }
