@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About Us - AutoGarage</title>
     <link rel="stylesheet" href="../global/global.css" />
+    <link rel="stylesheet" href="../css/about.css" />
   </head>
   <body>
     <!-- navbar -->
@@ -27,8 +28,148 @@
         <li><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
-    <p style="margin: 100px 0">About</p>
 
-    <script src="../global/global.js"></script>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>About Our Workshop</h2>
+        <p>Profesional dalam perawatan, perbaikan, dan modifikasi mobil. Mengutamakan kualitas, kecepatan, dan kepuasan pelanggan.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section">
+      <div class="text-box">
+        <h3>Siapa Kami?</h3>
+        <p>
+          Kami adalah bengkel otomotif modern yang menyediakan layanan lengkap mulai dari servis ringan, servis berat, detailing, hingga modifikasi performa. Dengan teknisi berpengalaman dan peralatan canggih, kami memastikan mobil Anda
+          dalam kondisi terbaik.
+        </p>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1515923162057-2acc9666e88e?w=1600" alt="Workshop" />
+    </section>
+
+    <!-- Stats -->
+
+    <div class="stats">
+      <div class="stat-box">
+        <h4 class="count" data-target="12">0</h4>
+        <p>Tahun Pengalaman</p>
+      </div>
+      <div class="stat-box">
+        <h4 class="count" data-target="5000">0</h4>
+        <p>Mobil Ditangani</p>
+      </div>
+      <div class="stat-box">
+        <h4 class="count" data-target="98">0</h4>
+        <p>% Kepuasan Pelanggan</p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="map-section">
+          <h1>Our Location</h1>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.2512567155613!2d112.74231207476124!3d-7.349133792659639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5004bffe541%3A0x750ca5e20ffb54cb!2sGaban%20Auto%20Garage!5e1!3m2!1sen!2sid!4v1762922425863!5m2!1sen!2sid"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a href="https://maps.app.goo.gl/PKVoK8QumqTFdE8P8" class="map-overlay" title="klik untuk buka di Google Maps"></a>
+          </div>
+        </div>
+        <div class="contact-caption">
+          <div class="sosmed-container">
+            <div class="judul-socmed">
+              <h1>Social Media</h1>
+            </div>
+            <!-- <div class="medsos">
+              <a
+                href="https://www.instagram.com/gabanautogaragesby?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                class="link-medsos"
+                target="_blank"
+              >
+                <img src="./Images/medsos/instagram.png" class="Ig" alt="instagram" />
+                <p>@gabanautogaragesby</p>
+              </a>
+              <a
+                href="https://www.tiktok.com/@gabanautogarage_sby?is_from_webapp=1&sender_device=pc"
+                class="link-medsos"
+                target="_blank"
+              >
+                <img src="./Images/medsos/tik-tok.png" alt="medsos" />
+                <p class="usn-tiktok">@gabanautogarage_sby</p>
+              </a>
+            </div> -->
+            <div class="contact">
+              <a href="https://www.instagram.com/gabanautogaragesby?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="flex link-medsos">
+                <img src="./Images/medsos/instagram.png" alt="medsos" />
+                <p>@gabanautogaragesby</p>
+              </a>
+
+              <a href="https://www.tiktok.com/@gabanautogarage_sby?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="flex link-medsos">
+                <img src="./Images/medsos/tik-tok.png" alt="" />
+                <p>@gabanautogaragesby</p>
+              </a>
+            </div>
+          </div>
+          <div class="sosmed-container">
+            <div class="judul-socmed">
+              <h1>Contact</h1>
+            </div>
+            <div class="contact">
+              <a href="https://wa.me/6281615508888?text=halo%20kami%20gaban%20auto%20garage%20mau%20pesan%20apa" target="_blank" rel="noopener" class="flex link-medsos">
+                <img src="./Images/medsos/whatsapp.png" alt="medsos" />
+                <p>089685674432</p>
+              </a>
+              <!-- Membuka Gmail compose (harus sudah login ke Gmail) -->
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arenabrekot.0q@gmail.com&su=Halo&body=Halo" target="_blank" rel="noopener" class="flex link-medsos">
+                <img src="./Images/medsos/gmail.png" alt="" />
+                <p>arenabrekot.0q@gmail.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <h6>©️2025 Gaban Auto Garage SBY</h6>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const counters = document.querySelectorAll(".count");
+
+      const startCount = () => {
+        counters.forEach((counter) => {
+          const update = () => {
+            const target = +counter.getAttribute("data-target");
+            const current = +counter.innerText;
+            const increment = target / 100;
+
+            if (current < target) {
+              counter.innerText = Math.ceil(current + increment);
+              requestAnimationFrame(update);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          update();
+        });
+      };
+
+      window.addEventListener("scroll", () => {
+        const statsPos = document.querySelector(".stats").offsetTop;
+        if (window.scrollY + window.innerHeight >= statsPos) {
+          startCount();
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,113 @@
+.hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600') center/cover no-repeat;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      animation: fadeUp 1s ease forwards;
+      color: white;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .about-section {
+      padding: 60px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-section img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(255, 59, 63, 0.3);
+      transform: scale(0.9);
+      transition: 0.5s;
+    }
+
+    .about-section img:hover {
+      transform: scale(1);
+    }
+
+    .text-box h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #ff3b3f;
+    }
+
+    .text-box p {
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    .stat-box {
+      background: #111;
+      padding: 25px 35px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #222;
+      transition: 0.4s;
+      color: white;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(255, 59, 63, 0.4);
+    }
+
+    .stat-box h4 {
+      font-size: 2rem;
+      color: #ff3b3f;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      background: #111;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 600px) {
+      .hero-content h2 { font-size: 2.2rem; }
+      header h1 { font-size: 1.2rem; }
+    }
