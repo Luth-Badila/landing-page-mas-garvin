@@ -111,11 +111,11 @@ h1 {
 /* Tablet (2 Collums) */
 @media (min-width: 481px) and (max-width: 991px) {
   #cardContainer {
-    grid-template-collums: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Laptop / Desktop (3 Collums) */
+/* Laptop / Desktop (3 Columns) */
 @media (min-width: 992px) {
   #cardContainer {
     grid-template-columns: repeat(3, 1fr);

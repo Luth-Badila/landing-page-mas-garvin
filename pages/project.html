@@ -29,7 +29,20 @@
       </ul>
     </nav>
 
-    <div id="project-wrapper"></div>
+    <div class="project-container">
+      
+          <!-- Loading Animation -->
+          <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading Data.....</p>
+          </div>
+      
+          <!-- Error Message -->
+          <div id="errorBox" class="error-box"></div>
+      
+          <div id="project-wrapper"></div>
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="../js/project.js"></script>

@@ -1,7 +1,6 @@
 // Config supabase
-const SUPABASE_URL = "https://oypzmflvdzrhevwfabtr.supabase.co";
-const SUPABASE_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95cHptZmx2ZHpyaGV2d2ZhYnRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMzNDI0NjcsImV4cCI6MjA3ODkxODQ2N30.ZCApxsUw-fpS2_CGadBrl0RCr6Yff7tqsGSF5Lp6Kpg";
+const SUPABASE_URL = "https://wqincsqcxfzlctixlrtw.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndxaW5jc3FjeGZ6bGN0aXhscnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMxMTg3MzMsImV4cCI6MjA3ODY5NDczM30.e5fw2NIn5FhsYPqLNQlritowjtaSKOtJW360r2ApE0k";
 
 const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -65,12 +64,7 @@ loadData();
 searchInput.addEventListener("input", function () {
   const keyword = this.value.toLowerCase();
 
-  const filtered = datas.filter(
-    (item) =>
-      item.title.toLowerCase().includes(keyword) ||
-      item.category.toLowerCase().includes(keyword) ||
-      item.description.toLowerCase().includes(keyword)
-  );
+  const filtered = datas.filter((item) => item.title.toLowerCase().includes(keyword) || item.category.toLowerCase().includes(keyword) || item.description.toLowerCase().includes(keyword));
 
   renderCards(filtered);
 });

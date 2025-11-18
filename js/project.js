@@ -5,13 +5,21 @@ const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 const wrapper = document.getElementById("project-wrapper");
+const loading = document.getElementById("loading");
+const errorBox = document.getElementById("errorBox");
 
 // Load data
 async function loadData() {
+  loading.style.display = "block";
+  errorBox.style.display = "none";
   const { data, error } = await db.from("projects").select("*");
 
+  loading.style.display = "none";
+
   if (error) {
-    console.error("Gagal mengambil data:", error);
+    errorBox.style.display = "block";
+    errorBox.textContent = "Gagal mengambil data dari supabase!";
+    console.error(error);
     return;
   }
 
